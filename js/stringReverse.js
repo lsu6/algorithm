@@ -9,9 +9,16 @@
 // }
 
 // ans2
-function stringReverse(str){
-  if(!str) return str;
-  return str.split('').reverse().join('');
+// function stringReverse(str){
+//   if(!str) return str;
+//   return str.split('').reverse().join('');
+// }
+//console.log('string : '+ stringReverse('string'));
+
+// ans3
+String.prototype.reverse = function(){
+  if(!this) return this;
+  return this.split('').reverse().join('');
 }
 
-console.log('string : '+ stringReverse('string'));
+console.log('string : '+ 'string'.reverse());
